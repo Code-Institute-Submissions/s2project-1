@@ -1,0 +1,13 @@
+.number-box {
+    font-size: 64px;
+    text-align: center;
+    line-height: normal;
+}
+#average-fat .x.axis text,
+#average-calories .x.axis text{
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
+div {
+    padding:20px;
+}
