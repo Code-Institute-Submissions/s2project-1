@@ -1,5 +1,5 @@
 body {
-    background-image: url(/static/css/McD.jpg)
+    background-image: url("McD.jpg")
 }
 .number-box {
     font-size: 64px;
