@@ -1,3 +1,6 @@
+body {
+    background-image: url(/static/css/McD.jpg)
+}
 .number-box {
     font-size: 64px;
     text-align: center;
