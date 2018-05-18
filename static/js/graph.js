@@ -129,23 +129,23 @@ function makeGraphs(error, foodData) {
         .xAxisLabel("Category")
         .yAxis().ticks(20);
 
-    // dc.scatterPlot("#calories-in-item")
-    //                 .width(768)
-    //                 .height(480)
-    //                 .x(d3.time.scale().domain([min_date, max_date]))
-    //                 .brushOn(false)
-    //                 .symbolSize(8)
-    //                 .clipPadding(10)
-    //                 .yAxisLabel("Calories")
-    //                 .colorAccessor(function(d){
-    //                   return d.key[2];
-    //                 })
-    //                 .colors(buyerColors)
-    //                 .title(function(d) {
-    //                     return d.key[2] + " spent " + d.key[1] + " in " + d.key[3];
-    //                 })
-    //                 .dimension(spend_dim)
-    //                 .group(spend_group);
+    dc.scatterPlot("#calories-in-item")
+                    .width(768)
+                    .height(480)
+                    .x(d3.time.scale().domain([min_date, max_date]))
+                    .brushOn(false)
+                    .symbolSize(8)
+                    .clipPadding(10)
+                    .yAxisLabel("Calories")
+                    .colorAccessor(function(d){
+                      return d.key[2];
+                    })
+                    .colors(buyerColors)
+                    .title(function(d) {
+                        return d.key[2] + " spent " + d.key[1] + " in " + d.key[3];
+                    })
+                    .dimension(spend_dim)
+                    .group(spend_group);
     
         
         dc.renderAll();
